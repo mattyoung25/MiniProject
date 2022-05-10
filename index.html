@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <title>Key Supply Chain Participants</title>
+   <meta name="description" content="Scrollama: Sticky Side Example" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link rel="stylesheet" href="style.css" />
+   <style>
+   #overview{
+   		width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #scrolly {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;	
+      padding: 1rem;
+    }
+
+    #scrolly > * {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+    }
+
+    article {
+      position: relative;
+      padding: 0 1rem;
+      width: 800px;
+    }
+
+    .sticky-thing {
+      position: -webkit-sticky;
+      position: sticky;
+      width: 100%;
+      margin: 0;
+      z-index: 0;
+      top: 12.5vh;
+      height: 75vh;
+      /* Center everything inside */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .sticky-thing figure {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      width: 415px;
+      height: 575px;
+    }
+
+    .sticky-thing figcaption {
+      align-self: flex-end;
+      text-align: center;
+      font-size: 15px;
+      font-style: italic;
+      line-height: 1.5;
+      margin: auto;
+    }
+
+    .sticky-thing iframe {
+      width: 415px;
+      height: 575px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      border: none;
+      
+    }
+
+    .step {
+      margin: 0 auto 2rem auto;  
+      color: #FAF0E6;
+      margin-bottom: 500px;
+    }
+
+    .step:last-child {
+      margin-bottom: 0;
+    }
+
+    .step.is-active {
+      color: #3b3b3b;
+    }
+
+    .step p {
+      text-align: justify;
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-size: 15px;
+
+    }
+
+    	body {
+  		background-color: #edf9fc;
+  	}
+
+  	h1 {
+  		color: #000000;
+  		font-family: arial, sans-serif;
+    	font-size: 40px;
+    	font-weight: bold;
+    	margin-top: 0px;
+    	margin-bottom: 1px;
+  	}
+
+  	h2 {
+    	color: #000000;
+    	font-family: arial, sans-serif;
+    	font-size: 30px;
+    	margin-top: 0px;
+    	margin-bottom: 1px;
+    	}
+
+    h3 {
+    	color: #000000;
+    	font-family: arial, sans-serif;
+    	font-size: 22px;
+    	margin-top: 0px;
+    	margin-bottom: 1px;
+    	}
+
+    h4 {
+    	color: #000000;
+    	font-family: arial, sans-serif;
+    	font-size: 22px;
+    	margin-top: 0px;
+    	margin-bottom: 1px;
+    }
+
+    p {
+    	color: #000000;
+    	font-family: arial, sans-serif;
+    	font-size: 15px;
+    	margin-top: 0px;
+    	margin-bottom: 1px;
+      text-align: justify;
+    }
+
+   th {
+	font-size: 18px;
+	}
+
+   td {
+	text-align:center;
+	font-size: 15px;
+	}
+
+	.center_image {
+  		display: block;
+ 		margin-left: auto;
+  		margin-right: auto;
+  		width: 70%;
+	}
+	.conclusion_image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 30%;
+	}
+	
+	.conclusion {
+		width: 75%;
+      	margin-left: auto;
+      	margin-right: auto;
+	}
+  </style>
+</head>
+
+<body>
+	<div>
+		<img src = "Stock_Images/IntroImage.jpeg", class = "center_image">
+	</div>
+
+	<main>
+	<section id="intro">
+	<h1>Assessing Supply Chain Risk of Subcontractors in the Defense Industrial Base</h1>
+      <h3>Author: mdy12</h3>
+	<p style = "text-align:center">ANLY Mini Project</p>
+      <br>
+	<h2>Introduction</h2>
+	<br>
+	<p>
+	As the world grows to be more technologically advanced, it becomes more interconnected than ever. While this proves to be a benefit in a multitude of facets of everyday life, the world is more susceptible to cyber-attacks and compromised security.
+	<br><br> The NSA is developing a cyber risk project regarding new methodology for risk among Defense Industrial Base companies. Contract awarding and supply chain risk are key dimensions in the overall cyber risk. The goal of this is to find the key components of the supply chain that must develop and increase security measures in order to keep the Defense Industrial Bases operating smoothly. These companies are considered to be targets for cyber espionage.
+	<br><br> Therefore, this project takes a proactive role in fortifying the United States's already strong security and helps provide the NSA with a roadmap to ensure proper security is in place through geographical location, specific subcontracting companies, essential business groups, and specific business descriptions' equipment.
+	</p>
+	<br>
+	<br>
+	<h2>Methods</h2>
+	<br>
+	<h3>Data Collection</h3>
+	<p>The key database for analyzing & quantifying contract risk is the <a href = "https://www.usaspending.gov/" target='_blank'>USASpending</a> website, which compiles comprehensive government award data from across federal agencies. If properly understood, this data can meaningfully improve the security of America's industrial base. This particular dataset is the contract summary for the largest hypersonic air-breathing weapon supply chain parent company and its subcontractors within. <a href = "https://www.usaspending.gov/award/CONT_AWD_HR001117C0025_9700_-NONE-_-NONE-" target='_blank'>Data Website</a> <a href = "Data/Dataset_Contract_Sub-Awards.csv" target='_blank'>Raw Data</a></p>
+	<br><br>
+	<h3>Data Cleaning</h3>
+	<br>
+	<p>The munging for this dataset was quite involved. With over 100 columns, the cleaning process took quite some time. However, there were certain variables that proved to be quite interesting. The subawardee name described the subcontractor company that was in charge of that specific contract. Next, the sub-award description outlined the specific parts, components, or pricing metrics of their respective job. Additionally, the subawardee city, state, and zipCode provide the exact location in which the subcontracting takes place.
+<br><br>
+To reduce the number of factors of the location component, the cities and states were grouped into US regions for various visuals: Northeast, South, Midwest, and West.
+<br><br>
+Other cleaning processes include removing NRE (Non-recurring Engineering) from the subawardee description as this occurred in almost every data point. Other important insights existed within the remaining words within the description. Also, pricing techniques were removed from the description, as they did not add valuable information on the specific work happening within that contract.</p>
+  <br>
+	<br>
+
+	<h2>Results and Associated Discussion</h2>
+	<p style = "text-align:center">(For the best viewing experience, you may need to zoom out in your web browser)</p>
+  	</section>
+
+  	<section id="scrolly">
+  	<article>
+  		<div class="step" data-step= "Visuals/ContractsMap.html" data-w = "130%" , data-h = "665px" data-colw = "50%" data-figcap = "Figure 1: This is a geospatial choropleth of the number of hypersonic contracts awarded by state. The visual has hover-ability on each state polygon shape that displays the number of contracts awarded, state name, and total money awarded for that state for additional information. <br /> <a href='Code/Choropleth.R' target='_blank'>Source Code</a>">
+		<h3>Lay of the Land</h3>
+  			<p>
+  			  The parent company of all of the subcontractor companies is located in Arizona, and therefore, it comes as no surprise that the majority of awarded subcontracts exist within that state with over 5000 subcontracts. This means that the company works with various subcontracts within the state. This trend continues as Arizona's neighboring state California is awarded the next highest number of contracts with over 4500 awarded contracts. Even with the majority of awarded contracts saturated within the Southwest, some contracts are awarded as far away as New Hampshire. Other notable states include both Missouri and Maryland with upwards of 500 contracts.
+  			  <br><br>
+  			  Therefore, an ideal area to increase security would be with subcontracting companies in the Southwest region because this area is essential to the development of hypersonic weapons.
+  		</p>
+  	</div>
+
+  	<div class="step" data-step= "Visuals/MoneyMap.html" data-w = "130%" , data-h = "665px" data-colw = "50%" data-figcap = "Figure 2: This is a geospatial choropleth of the total money awarded to hypersonic contracts by state. The visual has hover-ability on each state polygon shape that displays the total money awarded for that state, the number of contracts awarded, state name, and the number of contracts awarded for that state for additional information. <br /> <a href='Code/Choropleth.R' target='_blank'>Source Code</a>">
+  		<h3>Follow the Money</h3>
+  			<p>
+  			  Even with the parent company existing in the Southwest, Maryland is home to the most expensive contracts of the entire group of contracts (lot). From a fiscal point of view, the country is spending way more money in this state than any of the other states. This plot shows the sum of the sub-award amount in USD per state. It is however important to note that Arizona is still spending upwards of 30 million dollars on contracts. Additionally, California is spending upwards of 16 million dollars on contracts.
+  			  <br><br>
+  			  Nevertheless, the Maryland subcontractors must consider improving their security systems in order to save the country from losing the most expensive components/payments within the hypersonic supply chain system.
+  		</p>
+  	</div>
+  	<div class="step" data-step= "Visuals/keyregionalcompanies.html" data-w = "100%" , data-h = "600px" data-colw = "35%" data-figcap = "Figure 3: This is a pie chart representing the subcontractor companies with the most hypersonic contracts in the country. The larger a company's section of the chart, the more contracts that company was awarded. The chart helps readers understand the companies who are dominating the supply chain management space in the country. Hovering shows the company name, number of contracts, and region in which the subcontractor operates. <br /> <a href='Code/PiePlotCompanies.R' target='_blank'>Source Code</a>">
+  		<h3>Head Honchos</h3>
+  			<p>
+  			  The full dataset provides an exhaustive list of all subcontractor providers within the hypersonic supply chain system. However, these seven companies make up the majority of contracts within the country.
+  			  <br><br>
+  			  If a cyberattack were to take place in the hypersonic supply chain system, these companies would likely be the main targets, assuming the attackers knew what they were doing.
+  		</p>
+  	</div>
+
+  	<div class="step" data-step= "Visuals/networkgraph.png" data-w = "500%", data-h = "730px" data-colw = "200%" data-figcap = "Figure 4: This is a network graph highlighting the top frequency of the relationships within the entire dataset (Support). In other words, these are the business groups that most subcontractor companies categorize within.<br /> <a href='Code/NetworkCode.R' target='_blank'>Source Code</a>">
+  			<h3>The Link in the Supply Chain</h3>
+  			<p>
+  			  Each contract within the dataset described up to ten different business groups in which the contract was involved. To best understand these various business groups, a network was conducted to see the most common collection of organizations that make up each contract. Ultimately LLC (independently owned) companies, for-profit organizations, and manufacturing of goods made up the majority of companies within the supply chain.
+  			  <br><br>
+  			  Therefore, the manufacturing of goods, LLC companies, and for-profit companies contain the most important components of the supply chain and must be protected.
+  		</p>
+  	</div>
+
+  	<div class="step" data-step= "Visuals/BusinessDescriptionBarChart.html" data-w = "100%" , data-h = "665px" data-colw = "50%" data-figcap = "Figure 5: This is a multiple bar chart of the key business descriptions of the subcontractors in each region. Click on the legend to remove various regions for further comparison. <br /> <a href='Code/BarChart.R' target='_blank'>Source Code</a>">
+  		<h3>The Devil is in the Details</h3>
+  		<p>
+  		  Following the removal of NRE (Non-recurring engineering) and various pricing techniques noted above, key equipment and business descriptions were revealed about the specific subcontracting processes. Some of the most important parts within a hypersonic weapon are likely Gen Structural Assys, testing equipment, custom CCAs, and time material. In order to have a general sense of where these products are manufactured or distributed, this is displayed across various regions. Because Arizona is where the parent company is based, most of the testing is likely done on-site there. In contrast, cable assy harn multi is a commonly produced item in the Midwest, and it is likely unavailable in the West region.
+  		  <br><br>
+  		  Ultimately, understanding where certain items are manufactured and distributed can pose a serious risk to the supply chain management system. Furthermore, understanding the actual materials that are important to creating these weapons can pose a serious risk if threatening parties exploit the market for these items or furthermore interfere with raw materials or parts that go into these types of equipment.
+			</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+  	</div>
+	</article>
+	<div class = "sticky-thing">
+      <figure width = 100% height = 665px>
+        <iframe src = ""></iframe>
+        <figcaption>
+        </figcaption>
+      </figure>
+      
+  </div>
+
+</section>
+<section id="outro">
+    
+
+</section>
+<div class = "conclusion">
+	
+		<h2 style = "text-align:center">Conclusion</h2>
+		<br>
+<div>
+			<img src = "Stock_Images/FactoryImage.jpeg", class = "conclusion_image">
+	</div>
+	<br>
+			<p>
+			  For a variety of reasons, the United States supply chain spending must be made public. However, threats can be posed from several approaches discussed above including geographical location, specific subcontracting companies, essential business groups, and specific business description equipment.
+			  <br><br>
+			  In conclusion, these various approaches can take down an entire production and distribution system of hypersonic weapon development that helps protect the country from physical attack. Even so, the United States supply chain is so complex and ever-growing that if one subcontracting company is attacked, other subcontracting options can become available. Additionally, if the supply chain is shut down for the production of this specific weapon, other weapons will take precedent when protecting the citizens of the country. Furthermore, since the onset of the COVID-19 pandemic, supply chain systems across the country underwent some serious shutdowns. This resulted in delayed timelines and shortages in many areas of the country. Even with the shortages, the United States supply chains prevailed and are stronger now than they were before.
+			  <br><br>
+			  The risk for an individual product attack is high but it would take a much more calculated cyber attack to truly hurt the United States DOD supply chain systems.
+			</p>
+      <br>
+</div>
+</main>
+
+    <!-- <div class='debug'></div> -->
+		<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script>
+      // using d3 for convenience
+      var main = document.querySelector("main");
+      var scrolly = main.querySelector("#scrolly");
+      var sticky = scrolly.querySelector(".sticky-thing");
+      var article = scrolly.querySelector("article");
+      var steps = article.querySelectorAll(".step");
+
+      // initialize the scrollama
+      var scroller = scrollama();
+
+      // scrollama event handlers
+      function handleStepEnter(response) {
+        // response = { element, direction, index }
+        var el = response.element;
+
+        // remove is-active from all steps
+        // then add is-active to this step
+        steps.forEach(step => step.classList.remove('is-active'));
+        el.classList.add('is-active');
+
+        // update graphic based on step
+        sticky.querySelector("figure").style.width = el.dataset.w;
+        sticky.querySelector("figure").style.height = el.dataset.h;
+        sticky.querySelector("iframe").src = el.dataset.step;
+        sticky.querySelector("iframe").style.width = "100%";
+        sticky.querySelector("iframe").style.height = "100%";
+        sticky.querySelector("figcaption").innerHTML = el.dataset.figcap;
+        sticky.style.width = el.dataset.w;
+        sticky.style.height = el.dataset.h;
+        article.style.width = el.dataset.colw;
+      }
+
+      function init() {
+        scroller
+          .setup({
+            step: "#scrolly article .step",
+            offset: 0.75,
+            debug: false
+          })
+          .onStepEnter(handleStepEnter);
+
+        // setup resize event
+        window.addEventListener("resize", scroller.resize);
+      }
+
+      // kick things off
+      init();
+    </script>
+  </body>
+</html>
